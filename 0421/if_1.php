@@ -27,3 +27,5 @@ if ($a === $b) {
 } ?>
 
 <br>
+echo "<br>";
+$e=true;
