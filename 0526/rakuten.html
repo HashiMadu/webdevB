@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>楽天会員登録</h1>
+    <p>会員登録済みではないですか？<a href="">ログイン</a></p>
+    <form action="" method="post">
+        <label for="email">メールアドレス</label>
+        <br>
+        <input type="email-" name="email" id="email"></label>
+        <br>
+        <label for="email-confirm">メールアドレス再入力 (必須)</label><br>
+        <input type="email" id="email-confirm" name="email-confirm" required><br><br>
+
+        <label for="username">ユーザー名</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <input type="checkbox" name="use-email-as-id" id="use-eamil-as-id" checked>
+        <p>メールアドレスをユーザIDとして使用</p>
+        <label for=" password">パスワード (必須)</label><br>
+        <input type="password" id="password" name="password"><br>
+        </label>
+
+        <label for="password-confirm">パスワード再入力 (必須)</label><br>
+        <input type="password" id="password-confirm""></label>
+<p>パスワードを表示する</p>
+<br>
+
+<label for=" last-name-kanji">姓（漢字）<span style="color: red;">*</span></label><br>
+        <input type="text" id="last-name-kanji" name="last_name_kanji" required><br><br>
+
+        <label for="first-name-kanji">名（漢字）<span style="color: red;">*</span></label><br>
+        <input type="text" id="first-name-kanji" name="first_name_kanji" required><br><br>
+
+        <label for="last-name-katakana">姓（カタカナ）<span style="color: red;">*</span></label><br>
+        <input type="text" id="last-name-katakana" name="last_name_katakana" pattern="[\u30A0-\u30FF]+"
+            title="カタカナで入力してください" required><br><br>
+
+        <label for="first-name-katakana">名（カタカナ）<span style="color: red;">*</span></label><br>
+        <input type="text" id="first-name-katakana" name="first_name_katakana" pattern="[\u30A0-\u30FF]+"
+            title="カタカナで入力してください" required><br><br>
+
+        <label>
+            <input type="checkbox" name="agree" required>
+            <p>以下に同意いただいた上で、会員登録をお願いいたします。</p>
+            <ul>
+                <li><a href="#" target="_blank">楽天会員に関する規約類</a></li>
+                <li><a href="#" target="_blank">楽天グループ株式会社の個人情報保護方針</a></li>
+            </ul>
+
+            <h3>ニュースレター <span style="font-weight: normal;">(オプション)</span></h3>
+            <label>
+                <input type="checkbox" name="subscribe_newsletter" checked>
+                楽天会員ニュースを購読する
+            </label>
+            <p>
+                楽天グループのキャンペーンやイベント情報などをご案内するメールマガジンです。
+                <br>（<a href="#" target="_blank">会員ニュースの詳細</a>）
+                <br>購読を希望されない場合は「楽天会員ニュースを購読する」のチェックを外してください。
+                <br>※チェックした方には「ポイント獲得実績のお知らせ」もお届けします。
+            </p>
+            <button>確認に進む</button>
+
+
+    </form>
+
+
+</body>
+
+</html>
