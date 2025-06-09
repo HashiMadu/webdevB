@@ -2,20 +2,25 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight</title>
 </head>
 
+<body>
+    <form action="weight.php" method="post">
+        <h1>Weight</h1>
 
-<form action="weight.php" method="post">
-    <p><label>身長：</label>
-        <input type="text" name="height">m
-    </p>
+        <label for="weight">体重 (kg)</label>
+        <input type="number" name="weight" id="weight" required />
+        <br />
 
-    <p class="button">
-        <input type="submit" value="送信">
-    </p>
-</form>
+        <label for="height">身長 (m)</label>
+        <input type="float" name="height" id="height" required />
+        <br />
+
+        <input type="submit" value="送信" />
+    </form>
+</body>
 
 </html>
