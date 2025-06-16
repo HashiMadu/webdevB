@@ -1,5 +1,5 @@
 <?php
-require_once 'functions.php';
+require_once 'function.php';
 
 
 try {
@@ -15,7 +15,7 @@ try {
     $sql = 'SELECT title, author FROM books';
     $statment = $dbh->query($sql);
 
-    while ($row = $sta11ment->fetchObject()) {
+    while ($row = $statment->fetchObject()) {
         echo "書類名" . str2html($row['title']) . "<br>";
         echo "著者" . str2html($row['author']) . "<br>";
     }
